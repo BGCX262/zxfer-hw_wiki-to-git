@@ -1,4 +1,4 @@
-#summary How to design your zxfer based backup solution
+#summary How to design your ZFS HDD pool based backup solution
 
 = Design considerations for HDD-based backups using ZFS/zxfer =
 
