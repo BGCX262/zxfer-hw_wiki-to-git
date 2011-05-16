@@ -18,7 +18,7 @@ Do note that in the process I do not intend to disparage tape. Tape certainly ha
 
 == Tape backup systems ==
 
-Typically, backup data is written incrementally to tapes that are rotated in some systematic fashion and stored off-site. One of the more thorough backup rotation schemes [1] is Grandfather-Father-Son (GFS). This typically involves writing a backup to a set of 7 tapes over the course of a week. These are the “sons". At the end of the week, one of the tapes is kept as a representative of that week (a father). At the beginning of the next week, the oldest son from the previous week has incremental backup information written to it. And so on and so forth just as in the First In First Out (FIFO) system. 
+Typically, backup data is written incrementally to tapes that are rotated in some systematic fashion and stored off-site. One of the more thorough backup rotation schemes is [http://en.wikipedia.org/wiki/Backup_rotation_scheme Grandfather-Father-Son] (GFS). This typically involves writing a backup to a set of 7 tapes over the course of a week. These are the “sons". At the end of the week, one of the tapes is kept as a representative of that week (a father). At the beginning of the next week, the oldest son from the previous week has incremental backup information written to it. And so on and so forth just as in the First In First Out (FIFO) system. 
 
 
 
@@ -245,10 +245,6 @@ HDD based backups are a best fit for entities with a moderate amount of data tha
 
 
 == Footnotes ==
-
-[0] http://www.zxfer.org
-
-[1]  [[http://en.wikipedia.org/wiki/Backup_rotation_scheme|http://en.wikipedia.org/wiki/Backup_rotation_scheme]]
 
 [2] At the present time, it seems like ZFS Auto-Snapshot Service and Time-Slider in Solaris, and zfs-snapshot-mgmt from FreeBSD ports are the best tools to do this.
 
