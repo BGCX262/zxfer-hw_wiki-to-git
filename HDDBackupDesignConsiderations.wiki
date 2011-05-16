@@ -143,7 +143,7 @@ Hopefully this should give a good overview of the equipment and setup needed to 
 ==Footnotes==
 
 ===Newegg HDD reliability metric===
-See this [http://forums.storagereview.com/index.php/topic/28230-most-reliable-hard-drive/page__st__20|http://forums.storagereview.com/index.php/topic/28230-most-reliable-hard-drive/page__st__20 post] - FWIW I came to the same conclusion independently, but after googling I see that at least one other person on the web got there first. Kudos to them. As someone on that forum says 'In on-line review research, the first rule is "read all the words"'. I do exactly that, and came to exactly the same conclusions.
+See this [http://forums.storagereview.com/index.php/topic/28230-most-reliable-hard-drive/page__st__20|http://forums.storagereview.com/index.php/topic/28230-most-reliable-hard-drive/page__st__20 post] - FWIW I came to the same conclusion independently, but after googling I see that at least one other person on the web gotten there first. Kudos to them. As someone on that forum says 'In on-line review research, the first rule is "read all the words"'. I do exactly that, and came to exactly the same conclusions. Three cheers for OCD.
 
 
 ===Encryption===
