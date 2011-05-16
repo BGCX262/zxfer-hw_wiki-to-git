@@ -1,3 +1,5 @@
+#summary How to design your zxfer based backup solution
+
 = Design considerations for HDD-based backups using ZFS/zxfer =
 
 Now that I have hopefully [HDDBackupsWithZxfer established] that using HDDs in a ZFS system and transferred using the zxfer script can be a sensible backup solution, I will walk through some design decisions I have made in order to come up with a practical implementation. Hopefully this will serve as a guide to others to make their decisions easier, and/or to provoke comment and lead to a better overall solution. Note that this is only a discussion and I will NOT be held responsible for any loss of any kind you have as a result of reading this article.
