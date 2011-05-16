@@ -1,6 +1,6 @@
 = HDD based backups with ZFS & zxfer – a new paradigm =
 
-As I was writing the man page for zxfer [0] and reading some user comment, it became evident that it wasn't obvious to everyone how zxfer should be used. I also realized that the man page really wasn't the best place to compare and contrast backup strategies at length, hence the need for this article.
+As I was writing the man page for [http://www.zxfer.org zxfer] and reading some user comment, it became evident that it wasn't obvious to everyone how zxfer should be used. I also realized that the man page really wasn't the best place to compare and contrast backup strategies at length, hence the need for this article.
 
 
 
