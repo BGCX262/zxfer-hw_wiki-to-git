@@ -80,7 +80,7 @@ Another thing you might consider if you go this route is that it is probably eas
 
 == Mirror, RAIDZ2, RAIDZ, copies, prayer ==
 
-There is quite an array of choices we can make here for our backup virtual devices and how redundant we want to make them. The main concerns as I see them:
+There is quite an array of choices we can make here for our backup virtual devices, depending on convenience, cost and how redundant we want to make them. The main concerns as I see them:
 
  * how reliable your backups should be
  * what sort of spare, unused HDDs you have around that can be used, and
