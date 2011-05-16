@@ -128,8 +128,8 @@ We should also pose the question - how sensitive is my data? Consider that in th
 So if we are going to use HDDs as backup media, we have to make one of several choices. They are in order of least secure/easiest/cheapest -> most secure/hardest/most expensive.
 
  * Accept that your data may be read by your HDD vendor or one of the states through which your HDD passes after it is RMA'd. Don't bother with encryption.
- * Keep and destroy [4] the HDDs that fail and can't be written to. For drives with bad sectors, overwrite the drive multiple times with random data. Accept that the bad sectors may be read, and that perhaps there is technology to figure out what was originally written to the drive. Also consider that the random data you write might not be cryptographically secure. [5]
- * Encrypt the drive and store the key somewhere not on the drive. When the HDD fails, optionally write with random data if possible. Send the encrypted drive to be RMA'd, and hope that they don't have the technology to break the encryption. [6] Encrypting your backup pools can also reduce the amount of trust you need to extend to the off-site storage locations, and mitigates risk in the event of theft. [7]
+ * Keep and destroy (See [#HDD_Destruction_Notes]) the HDDs that fail and can't be written to. For drives with bad sectors, overwrite the drive multiple times with random data. Accept that the bad sectors may be read, and that perhaps there is technology to figure out what was originally written to the drive. Also consider that the random data you write might not be [http://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator cryptographically secure].
+ * Encrypt the drive and store the key somewhere not on the drive. When the HDD fails, optionally write with random data if possible. Send the encrypted drive to be RMA'd, and hope that they don't have the technology to break the encryption. (See [#Cryptanalysis_Notes]) Encrypting your backup pools can also reduce the amount of trust you need to extend to the off-site storage locations, and mitigates risk in the event of theft. (See [#Encryption_Caution_Notes])
  * Select reliable drives as best we can. Subject all HDDs to a period of burn-in with unimportant data (e.g. zeros, ones, /dev/random) to catch drives that are likely to fail early, and so decrease the number of production drives that will need to be RMA'd. Perhaps there are also some other practices that will also lead to increased drive reliability. Finally, when drives fail, eat the cost. Store the drives on site indefinitely, or optionally destroy the platters.
 
 Do note that you are already making one of these choices with the drives on your servers, but you may not have consciously thought about it in those terms.
@@ -243,6 +243,7 @@ If there is a catch, it is that the zxfer project is young, and that the data mu
 
 HDD based backups are a best fit for entities with a moderate amount of data that is slowly added to all the time. For many if not the majority of use cases, an organization or individual now has the technology at hand to either increase the reliability and convenience of backups, lower the cost, or both. Additionally, a HDD based solution is scalable without large jumps in cost. This applies for any entity from individual through to a large corporation provided that the data accumulation pattern of the organization is a fit with this system.
 
+----
 
 == Footnotes ==
 
@@ -252,14 +253,13 @@ At the present time, it seems like ZFS Auto-Snapshot Service and Time-Slider in 
 ===Rogue Sysadmin Notes===
 A rogue sysadmin who completely trashes an organization's data and all its backups would be somewhat infamous, and likely to never be employed again by a company in a role having anything to do with computers. Technically, it might be possible that they make enough illicit money in the process to make it still worth considering, but there are a lot of costs in leaving the country, not just financial. Not to mention the risk in getting caught.
 
-[4] Considering that even a tiny scrap of HDD can have GB of data on it and that it can be read with an electron microscope, HDDs would need to either be reduced to dust, melted, or nuked from orbit as it is the only way to be sure. Actually, melting should be sufficient. HDD platters are either aluminum or glass (Hitachi).  [[http://www.backyardmetalcasting.com/|http://www.backyardmetalcasting.com]] provides several methods for somewhat inexpensively turning your Al platters into ingots. A household microwave and “microwave kiln" kits provide relatively inexpensive options for glass platters.
+===HDD Destruction Notes===
+Considering that even a tiny scrap of HDD can have GB of data on it and that it can be read with an electron microscope, HDDs would need to either be reduced to dust, melted, or nuked from orbit as it is the only way to be sure. Actually, melting should be sufficient. HDD platters are either aluminum or glass (Hitachi).  [[http://www.backyardmetalcasting.com/|http://www.backyardmetalcasting.com]] provides several methods for somewhat inexpensively turning your Al platters into ingots. A household microwave and “microwave kiln" kits provide relatively inexpensive options for glass platters.
 
-[5] [[http://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator|http://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator]]
-
-[6] Whenever someone presents arguments about how difficult it is to break a given form of encryption (other than a One Time Pad), I am always reminded of how indecipherable Enigma was supposed to be, and how many years the secret of the decryption was able to be kept from the public despite multiple people obviously having worked on that problem. I also think about the speed advantages that specialized hardware has over a general CPU.
-
-
+===Cryptanalysis Notes===
+Whenever someone presents arguments about how difficult it is to break a given form of encryption (other than a One Time Pad), I am always reminded of how indecipherable Enigma was supposed to be, and how many years the secret of the decryption was able to be kept from the public despite multiple people obviously having worked on that problem. I also think about the speed advantages that specialized hardware has over a general CPU.
 
 Also it will almost certainly not be manifestly obvious that the encryption you use is broken and that your data is being read. Anyone sufficiently skilled and funded to break the encryption can be assumed to have the smarts to manufacture a plausible explanation as to why they know something they shouldn't, in the same way that the Allies would visibly fly scout planes over Axis formations they had prior knowledge of through cracked encrypted information.
 
-[7] Do note that if you are going to use encryption, I cannot stress enough how important it is to make multiple backups of your encryption keys and pass phrases. It is also worthwhile having an unencrypted backup or two. If you inadvertently lock yourself out of your data and have irretrievably lost the key, there shall be much wailing and gnashing of teeth.
+===Encryption Caution Notes===
+Do note that if you are going to use encryption, I cannot stress enough how important it is to make multiple backups of your encryption keys and pass phrases. It is also worthwhile having an unencrypted backup or two. If you inadvertently lock yourself out of your data and have irretrievably lost the key, there shall be much wailing and gnashing of teeth.
