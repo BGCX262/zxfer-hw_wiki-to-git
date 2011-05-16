@@ -9,15 +9,12 @@ It is readily evident to anyone who has had to replace several HDDs that there a
 
  * Cost of shipping the drive back to RMA. (Often not covered by the manufacturer.) Or if you judge that you cannot return the drive for security reasons, the cost of the drive itself and cost of destruction, if you go that route.
  * Cost of your time:
- * In testing the drive in accordance with the manufacturer's testing suite to get an error code for them, if relevant.
- * In writing the drive with random data several times in order to render the drive unreadable to the manufacturer. If you don't want to risk sending private or commercially sensitive information back to the manufacturer, this is what must be done (at a minimum).
+   * In testing the drive in accordance with the manufacturer's testing suite to get an error code for them, if relevant.
+   * In writing the drive with random data several times in order to render the drive unreadable to the manufacturer. If you don't want to risk sending private or commercially sensitive information back to the manufacturer, this is what must be done (at a minimum).
  * In wrapping the drive appropriately in accordance with the manufacturer's specifications to be sent back, and posting it.
  * The cost of buying spare drives to cover downtime, or if you don't buy spare drives, the risk of a disaster happening during this time.
  * The cost of the lowered lifetime of a drive after RMA period is up. e.g. if a drive has a 3 year warranty and you want to use it 5 years, a more reliable drive has greater likelihood of not dying until the end of desired use.
  * The costs of extra redundancy required to counteract the increased risks of lost data through bad sectors or outright failure. Remember that even though a triple mirror or RAIDZ2 protects us against 2 disks failing, it won't protect us against 2 disks failing and some bad sectors on the third, or 1 disk failing and bad sectors in the same places on 2 other disks. This redundancy can come about with increased copies on ZFS, higher levels of RAID (e.g. RAIDZ3) or mirror, and perhaps more frequent backups, but any way you slice it there is a cost.
-
-
-
 
 == Google's [http://static.googleusercontent.com/external_content/untrusted_dlcp/labs.google.com/en//papers/disk_failures.pdf Failure Trends in a Large Disk Drive Population] - Implications ==
  * HDD failure rates highly correlated with model/manufacturer/vintage → i.e. research and buy known good drives
