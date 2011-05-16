@@ -69,21 +69,14 @@ You will want to make sure that you aren't saturating individual SATA ports with
 
 Note that if you are in the market for a motherboard, you will note that it makes good sense to look for as many SATA ports as you can find. e.g. a root mirror SSD, plus a L2ARC/ZIL SSD, plus a triple mirror storage pool, plus an optical drive is already 7 SATA ports. You will need at least one more SATA/e-SATA port for a single mirror backup alone (with good speed). For every 2 drives in your backup pool, add an extra SATA port.
 
-
-
 Port multiplication support is a must, unless you want to use single HDD docks and a SATA port for every HDD dock connected.
 
 
 === HDD physical protection ===
 
-You can somewhat mitigate the risk of drive damage in the e-SATA HDD dock solution by purchasing silicone drive covers for each drive, and transporting/storing all of the drives in a padded camera bag (e.g. LowePro) ~ $60 on ebay. 
-
-
+You can somewhat mitigate the risk of drive damage in the e-SATA HDD dock solution by purchasing silicone drive covers for each drive, and transporting/storing all of the drives in a padded camera bag (e.g. Lowepro) ~ $60 on ebay. 
 
 Another thing you might consider if you go this route is that it is probably easier to get a SATA data + power extension for each port on your HDD dock. That way you can sit your silicone encased HDDs down without having to remove the silicone case every time - there is a convenient hole for this purpose. Heat may be an issue but for backups of short duration it will be OK. If you are worried about this a cheap portable fan should provide enough cooling.
-
-
-
 
 == Mirror, RAIDZ2, RAIDZ, copies, prayer ==
 
