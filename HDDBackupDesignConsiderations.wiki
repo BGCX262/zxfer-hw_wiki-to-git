@@ -78,7 +78,7 @@ Port multiplication support is a must, unless you want to use single HDD docks a
 
 You can somewhat mitigate the risk of drive damage in the e-SATA HDD dock solution by purchasing silicone drive covers for each drive, and transporting/storing all of the drives in a padded camera bag (e.g. Lowepro) ~ $60 on ebay. 
 
-Another thing you might consider if you go this route is that it is probably easier to get a SATA data + power extension for each port on your HDD dock. That way you can sit your silicone encased HDDs down without having to remove the silicone case every time - there is a convenient hole for this purpose. Heat may be an issue but for backups of short duration it will be OK. If you are worried about this a cheap portable fan should provide enough cooling.
+Another thing you might consider if you go this route is that it is probably easier to get a SATA data + power extension for each port on your HDD dock. That way you can sit your silicone encased HDDs down without having to remove the silicone case every time - there is a convenient hole for this purpose. Heat may be an issue but for backups of short duration it will be OK. After an extended period of use I found the temperature differential was 25 degrees Celsius above ambient (according to `# smartctl -a`). If you are worried about this a cheap portable fan should provide enough cooling.
 
 == Mirror, RAIDZ2, RAIDZ, copies, prayer ==
 
