@@ -76,9 +76,11 @@ Port multiplication support is a must, unless you want to use single HDD docks a
 
 === HDD physical protection ===
 
-You can somewhat mitigate the risk of drive damage in the e-SATA HDD dock solution by purchasing silicone drive covers for each drive, and transporting/storing all of the drives in a padded camera bag (e.g. Lowepro) ~ $60 on ebay. 
+You can somewhat mitigate the risk of drive damage in the e-SATA HDD dock solution by purchasing silicone drive covers for each drive. These greatly minimize any jarring when the drives are placed down on hard surfaces, and also stop drives sliding around (and off) the table. They also enable easy and stable stacking of the drives since they interlock.
 
-Another thing you might consider if you go this route is that it is probably easier to get a SATA data + power extension for each port on your HDD dock. That way you can sit your silicone encased HDDs down without having to remove the silicone case every time - there is a convenient hole for this purpose. Heat may be an issue but for backups of short duration it will be OK. After an extended period of use I found the temperature differential was 25 degrees Celsius above ambient (according to `# smartctl -a`). If you are worried about this a cheap portable fan should provide enough cooling.
+Another thing you might consider if you use the silicone drive covers is that it is probably easier to get a SATA data + power extension for each port on your HDD dock. That way you can sit your silicone encased HDDs down without having to remove the silicone case every time - there is a convenient hole for this purpose. Heat may be an issue but for backups of short duration it will be OK. After an extended period of use I found the temperature differential was 25 degrees Celsius above ambient (according to `# smartctl -a`). If you are worried about this a cheap portable fan directed at the drives would probably provide enough cooling.
+
+For transporting HDD from one location to another, you will want to carry them in some sort of padded container. Camera bags work well for this purpose (e.g. Lowepro) ~ $60 on ebay. Even a cardboard box lined with bubble wrap in a cloth bag will work. At least one location should house the drives in a fire/water proof safe.
 
 == Mirror, RAIDZ2, RAIDZ, copies, prayer ==
 
